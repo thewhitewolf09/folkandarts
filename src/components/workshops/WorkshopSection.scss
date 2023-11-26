@@ -1,0 +1,63 @@
+/* WorkshopSection.scss */
+
+.workshop-section {
+    font-family: Arial, sans-serif;
+     width: 50%;
+     padding-right: 10px;
+    
+  
+    .workshop-card {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      background-color: rgb(236, 214, 152);
+      display: flex;
+      align-items: flex-start;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      
+      .workshop-image{
+        width: 230px;
+        height: 230px;
+        margin-right: 20px;
+      }
+
+      h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+  
+      h4 {
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 5px;
+      }
+  
+      ul {
+        list-style: none;
+        padding: 0;
+  
+        li {
+          margin-bottom: 5px;
+        }
+      }
+
+      .toggle-description-btn {
+        color: brown;
+        cursor: pointer;
+        border: none;
+        margin-left: 0;
+        padding-left: 0;
+        //margin-top: 10px;
+        background-color: transparent;
+        transition: color 0.3s ease;
+        font-size: 18px;
+        font-weight: 600;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  

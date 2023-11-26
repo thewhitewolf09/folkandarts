@@ -1,0 +1,141 @@
+// StudentDashboard.scss
+
+/* Variables */
+$primary-color: #2196f3;
+$secondary-color: #4caf50;
+$text-color: #333;
+$background-color: #f5f5f5;
+
+/* Student Dashboard Styles */
+
+.student-dashboard {
+  font-family: Arial, sans-serif;
+  color: $text-color;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+  .header {
+    background-color: white;
+    text-align: center;
+
+    display: flex;
+    padding: 20px;
+
+    div {
+      width: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      h1 {
+        font-size: 24px;
+        margin-bottom: 5px;
+        font-family: Roboto;
+      }
+    }
+
+    div {
+      img {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        border: 3px solid #e2e2e2;
+      }
+    }
+  }
+
+  .about-contact-container {
+    display: flex;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    img {
+      width: 250px;
+      height: 250px;
+    }
+    .score-rank-container {
+      width: 75%;
+
+      h1 {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 0;
+      }
+      p {
+        margin-top: 5px;
+        font-weight: bold;
+        color: #2196f3;
+      }
+
+      .score-rank {
+        display: flex;
+        margin-top: 40px;
+
+        div {
+          margin-right: 300px;
+          p {
+            font-size: 14px;
+            font-weight: 600;
+            color: #333;
+          }
+          span {
+            font-weight: bold;
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+
+  .about-section,
+  .contact-section,
+  .upload-section,
+  .basic-info-section {
+    margin-bottom: 20px;
+
+    h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: $secondary-color;
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 5px;
+
+      button {
+        background: none;
+        border: none;
+        color: $primary-color;
+        cursor: pointer;
+        text-decoration: underline;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: darken($primary-color, 10%);
+        }
+      }
+    }
+
+    .upload-label {
+      background-color: $primary-color;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+
+    input[type="file"] {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,236 @@
+/* Landing Page Styles */
+
+.landing-page {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #f5f5f5;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  span {
+    font-size: 25px;
+    font-weight: 600;
+    color: brown;
+  }
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li {
+  cursor: pointer;
+}
+
+.landing-page-tabs {
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+  span {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: #d1a45d;
+    color: #333;
+    font-size: 20px;
+    font-weight: 600;
+    border-left: solid 1px white;
+    border-right: solid 1px white;
+    cursor: pointer;
+  }
+
+  .active {
+    border-bottom: solid 3px brown;
+  }
+}
+
+.announcements-section {
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 3px;
+  background-color: rgb(9, 9, 123);
+
+  .announcements-tab {
+    width: 13%;
+    border-left: solid 1px white;
+    border-right: solid 1px white;
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 18px;
+      font-weight: 600;
+      padding: 12px;
+    }
+  }
+
+  .marquee {
+    width: 100%;
+    color: white;
+    overflow: hidden;
+  }
+
+  .marquee-content {
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+  }
+
+  .marquee-content p {
+    display: inline-block;
+    margin: 10px 30px; /* Remove default paragraph margins */
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-100%, 0);
+    }
+  }
+}
+
+.folkart-section {
+  display: flex;
+  padding: 60px;
+  .link-list {
+    background-color: #ccc;
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 15%;
+    height: fit-content;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    span {
+      font-size: 20px;
+      margin: 5px;
+      font-weight: 500;
+      cursor: pointer;
+      color: #333;
+    }
+
+    button{
+      font-size: 20px;
+      margin: 5px;
+      padding-left: 0;
+      font-weight: 500;
+      cursor: pointer;
+      color: #333;
+      background-color: transparent;
+      border: none;
+    }
+
+    .active {
+      font-size: 22px;
+      color: black;
+      font-weight: 600;
+    }
+  }
+
+  .faculty-content {
+    width: 85%;
+    display: flex;
+    align-items: flex-start !important;
+    margin: 10px;
+    padding: 10px;
+
+    .faculty-image {
+      img {
+        width: 250px;
+      }
+    }
+
+    .faculty-description {
+      margin: 10px;
+      margin-left: 20px;
+      font-size: 17px;
+      color: #222;
+
+      .faculty-name {
+        font-size: 24px;
+        font-weight: 600;
+        color: #333;
+      }
+      p {
+        max-height: 100px;
+        overflow: hidden;
+        margin-bottom: 0;
+        font-size: 18px;
+        color: #333;
+        font-weight: 500;
+
+        &.expanded {
+          max-height: none;
+        }
+      }
+
+      .toggle-description-btn {
+        color: brown;
+        cursor: pointer;
+        border: none;
+        margin-left: 0;
+        padding-left: 0;
+        margin-top: 10px;
+        background-color: transparent;
+        transition: color 0.3s ease;
+        font-size: 18px;
+        font-weight: 600;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: brown;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #ccc;
+  color: #333;
+}
+
+.commments-workshop-container {
+  display: flex;
+  .comment-section {
+    width: 50%;
+  }
+}
+
+footer {
+  background-color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+}
