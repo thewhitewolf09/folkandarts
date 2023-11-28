@@ -1,12 +1,12 @@
 // StudentDashboard.jsx
 
 import React, { useState } from "react";
-import "./StudentDashboard.scss";
+import "./Dashboard.scss";
 import profilePhoto from "..//..//assets/images/profile.jpg";
 import defaultProfile from "..//..//assets/images/defaultProfile.jpg";
 import { Link } from "react-router-dom";
 
-const StudentDashboard = () => {
+const Dashboard = () => {
   const student = {
     name: "Bhanu Pratap Singh",
     id: "20AG10005",
@@ -284,7 +284,7 @@ const StudentDashboard = () => {
                 <button className="btn">Edit Workshops {`->`}</button>
               </Link>
 
-              <Link to={"/"}>
+              <Link to={"/evaluate"}>
                 <button className="btn">Evaluate Students {`->`}</button>
               </Link>
               <Link to={"/"}>
@@ -298,4 +298,4 @@ const StudentDashboard = () => {
   );
 };
 
-export default StudentDashboard;
+export default Dashboard;
