@@ -109,6 +109,7 @@ nav ul li {
 
 .folkart-section {
   display: flex;
+  align-items: flex-start;
   padding: 60px;
   .link-list {
     background-color: #ccc;
@@ -152,7 +153,9 @@ nav ul li {
     display: flex;
     align-items: flex-start !important;
     margin: 10px;
+    margin-top: 0;
     padding: 10px;
+    padding-top: 0;
 
     .faculty-image {
       img {
@@ -224,13 +227,23 @@ nav ul li {
 
 .commments-workshop-container {
   display: flex;
+  background-color: #3b0606;
+  padding-top: 60px;
   .comment-section {
     width: 50%;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
   }
 }
 
 footer {
-  background-color: #f5f5f5;
+  background-color: #3b0606;
   padding: 20px;
   text-align: center;
+
+  p{
+    color: white;
+    font-weight: bold;
+  }
 }
